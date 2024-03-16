@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flip_card/flip_card.dart';
 
+
 class RegisterPage extends StatefulWidget {
   final GlobalKey<FlipCardState> cardKey;
   const RegisterPage({super.key, required this.cardKey});
@@ -40,7 +41,7 @@ class _RegisterPageState extends State<RegisterPage> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  //                   registration page
+                  //              registration page
                   Text("Register Here",style: TextStyle(
                     fontSize: 18,
                   ),),
