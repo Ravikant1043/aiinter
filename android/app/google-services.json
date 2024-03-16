@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "997234180551",
+    "project_id": "aiinterview-5a0ab",
+    "storage_bucket": "aiinterview-5a0ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997234180551:android:c7b0f05bd68129341e59e2",
+        "android_client_info": {
+          "package_name": "com.example.aiinterview"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvkuOC8Qchwj1to3OrMFRInhu56EeM9ao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
