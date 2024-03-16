@@ -47,13 +47,8 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCQEYHLpAnMIbQM_xjcfb5txxZwAPe7TII',
-    appId: '1:997234180551:web:7a08e4bacd44139d1e59e2',
-    messagingSenderId: '997234180551',
-    projectId: 'aiinterview-5a0ab',
-    authDomain: 'aiinterview-5a0ab.firebaseapp.com',
-    storageBucket: 'aiinterview-5a0ab.appspot.com',
-    measurementId: 'G-WLDL88HXZC',
+    //CONTENT RELATED TO API
+      // for the integration of 
   );
 
   static const FirebaseOptions android = FirebaseOptions(
