@@ -52,11 +52,11 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBvkuOC8Qchwj1to3OrMFRInhu56EeM9ao',
-    appId: '1:997234180551:android:c7b0f05bd68129341e59e2',
-    messagingSenderId: '997234180551',
-    projectId: 'aiinterview-5a0ab',
-    storageBucket: 'aiinterview-5a0ab.appspot.com',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    storageBucket: '',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
