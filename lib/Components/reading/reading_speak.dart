@@ -39,7 +39,7 @@ class _Reading_SpeakingState extends State<Reading_Speaking> {
   late ValueNotifier<double> valueNotifier=ValueNotifier(0.0);
 
   Future<void> compareText(String s1, String s2) async {
-    final apiKey = "AIzaSyD4z8TqJJ-8aGwpNJBFZFMQqy2oCImrnxA";
+    final apiKey = ""; // enter your apikey
 
     final model = GenerativeModel(model: 'gemini-pro', apiKey: apiKey);
     final content = [
@@ -76,7 +76,7 @@ class _Reading_SpeakingState extends State<Reading_Speaking> {
 
   Future<void> generateText() async {
 
-    final apiKey = "AIzaSyD4z8TqJJ-8aGwpNJBFZFMQqy2oCImrnxA";
+    final apiKey = ""; // enter your apikey
     if (apiKey == null) {
       print('No \$API_KEY environment variable');
       return;
