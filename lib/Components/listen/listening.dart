@@ -119,7 +119,7 @@ class _ListeningState extends State<Listening> {
 
   //Using API KEY generating text and speaking
   Future<void> generateText() async {
-    final apiKey = "AIzaSyD4z8TqJJ-8aGwpNJBFZFMQqy2oCImrnxA";
+    final apiKey = "";// enter your apikey
     if (apiKey == null) {
       print('No \$API_KEY environment variable');
       return;
