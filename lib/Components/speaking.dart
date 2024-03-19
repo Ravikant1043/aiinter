@@ -28,7 +28,7 @@ class _SpeakingState extends State<Speaking> {
   late SpeechToText _speaking;
 
   ScrollController controller = ScrollController();
-  final apiKey = "AIzaSyD4z8TqJJ-8aGwpNJBFZFMQqy2oCImrnxA";
+  final apiKey = ""; // enter your apikey
   Future<void> generateText() async {
     final model = GenerativeModel(model: 'gemini-pro', apiKey: apiKey);
     final content = [Content.text('Generate a random simple word on which we can speak')];
