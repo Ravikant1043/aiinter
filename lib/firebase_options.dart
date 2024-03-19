@@ -47,29 +47,14 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCQEYHLpAnMIbQM_xjcfb5txxZwAPe7TII',
-    appId: '1:997234180551:web:7a08e4bacd44139d1e59e2',
-    messagingSenderId: '997234180551',
-    projectId: 'aiinterview-5a0ab',
-    authDomain: 'aiinterview-5a0ab.firebaseapp.com',
-    storageBucket: 'aiinterview-5a0ab.appspot.com',
-    measurementId: 'G-WLDL88HXZC',
+    // apikeys
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBvkuOC8Qchwj1to3OrMFRInhu56EeM9ao',
-    appId: '1:997234180551:android:c7b0f05bd68129341e59e2',
-    messagingSenderId: '997234180551',
-    projectId: 'aiinterview-5a0ab',
-    storageBucket: 'aiinterview-5a0ab.appspot.com',
+    // apikeys
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCQL-7Gscp85atB9aC5yf3Mpu-0RFPFv6w',
-    appId: '1:997234180551:ios:c3518e197a5e49b81e59e2',
-    messagingSenderId: '997234180551',
-    projectId: 'aiinterview-5a0ab',
-    storageBucket: 'aiinterview-5a0ab.appspot.com',
-    iosBundleId: 'com.example.aiinterview',
+    // api keys
   );
 }
