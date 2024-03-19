@@ -157,7 +157,7 @@ class _LoginTabState extends State<LoginTab> {
       });
       // final prefs = await SharedPreferences.getInstance();
       // prefs.setBool('isLoggedIn', true); // Store login status locally
-      Navigator.push(context, MaterialPageRoute(builder: (context) => FirstPage1(),));
+      // Navigator.push(context, MaterialPageRoute(builder: (context) => FirstPage1(),));
     }
     catch(e){
       print(e);
@@ -360,8 +360,8 @@ class _RegisterPageState extends State<RegisterPage> {
               child: TextFormField(
                 validator: (val){
                   if(password.text!=confirmpassword.text){
-                    showCustomSnackBar(context, "Password doesn;t match", Colors.redAccent);
-                    return null;
+                    // showCustomSnackBar(context, "Password doesn;t match", Colors.redAccent);
+                    return "Password doesn;t match";
                   }
                   if (val == null || val.isEmpty) {
                     return 'Confirm Password';
@@ -382,7 +382,7 @@ class _RegisterPageState extends State<RegisterPage> {
             Center(
               child: InkWell(
                 onTap: (){
-                  if(key.currentState!.validate()){
+                  if(key.currentState!.validate() && password.text==confirmpassword.text){
                     Register();
                   }
                   setState(() {

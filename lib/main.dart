@@ -9,9 +9,9 @@ import 'Components/page_no_1.dart';
 import 'Components/speaking.dart';
 // import 'Components/firstpage.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const MyApp());
 }
 
@@ -35,6 +35,6 @@ class Main extends StatefulWidget {
 class _MainState extends State<Main> {
   @override
   Widget build(BuildContext context) {
-    return LoginPage();
+    return AuthChange();
   }
 }

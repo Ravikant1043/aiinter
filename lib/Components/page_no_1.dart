@@ -1,9 +1,12 @@
 import 'dart:async';
 import 'dart:math';
+import 'package:aiinterview/Components/reading/reading_topic.dart';
 import 'package:aiinterview/Components/speaking.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:circular_seek_bar/circular_seek_bar.dart';
+
+import 'listen/topic_selector_listen.dart';
 
 class FirstPage1 extends StatefulWidget {
   const FirstPage1({super.key});
@@ -47,121 +50,109 @@ class _FirstPage1State extends State<FirstPage1> {
         ),
 
       //   ///////////             child of the container
-        child: Column(
-          children: [
-            Container(
-              height: bre/1.7,
-              width: bre,
-              child: CustomPaint(
-                painter: SectorPainter(),
-              ),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-           const Text("Hlw guys"),
-            const SizedBox(
-              height: 25,
-            ),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20),
-              child:Text(
-                "hlw guys we are building this very very very "
-                    "very very very very very very very very very very"
-                    " very very very very very very very very very very"
-                    " very very very very very very very very very very"
-                    "very very very very very very very very very very very "
-                    "very very very very very very very very very very very "
-                    "very very very very very very very very very very very "
-                    "gooood app "
-              ),
-            ),
-            SizedBox(height: 30,),
-            Container(
-              height: leftHeight,
-              // color: Colors.red,
-              child: Column(
-                children: [
-                  SizedBox(height: 60,),
-                  // Center(
-                  //   child: Container(
-                  //     height: bre/2-10,
-                  //     width: bre/2-10,
-                  //     decoration: BoxDecoration(
-                  //       color: Colors.purple.shade500,
-                  //       shape: BoxShape.circle,
-                  //       boxShadow: [
-                  //         BoxShadow(
-                  //           color: Colors.black38,
-                  //           blurRadius: 4,
-                  //           spreadRadius: 3,
-                  //           offset: Offset(2,2),
-                  //         )
-                  //       ]
-                  //     ),
-                  //   ),
-                  // ),
-                  // Center(
-                  //   child: HelloWorld(
-                  //     pos: 0,
-                  //     st_angle: 0,
-                  //     h: bre +40,
-                  //     l: bre+40,
-                  //   ),
-                  // )
+        child: SingleChildScrollView(
 
-                  Container(
-                    height: 70,
-                    width: 200,
-                    decoration: BoxDecoration(
-                      color: Colors.purple.shade300,
-                      border: Border.all(
-                        color: Colors.purple,
-                        width: 2,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                height: bre/1.8,
+                width: bre,
+                child: CustomPaint(
+                  painter: SectorPainter(),
+                ),
+              ),
+              const SizedBox(
+                height: 40,
+              ),
+             const Text("Speak Savvy",style: TextStyle(
+               fontSize: 25,
+               decoration: TextDecoration.underline,
+             ),),
+              const SizedBox(
+                height: 25,
+              ),
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 0),
+                child:Column(
+                  children: [
+                    Center(
+                      child: Text(
+                        "Speak, Listen, Learn: Your Path to Fluent",
+                        style: TextStyle(fontSize: 18),
                       ),
-                      borderRadius: BorderRadius.circular(20)
                     ),
-                    child: CupertinoButton(child: Text("Reading...",style: TextStyle(color: Colors.white,fontWeight:FontWeight.bold,fontSize: 20),), onPressed: (){
+                    Center(
+                      child: Text(
+                          "Communication!",
+                        style: TextStyle(fontSize: 20,color: Colors.red,decoration: TextDecoration.underline,),
+                      ),
+                    ),
+                  ],
+                ),
 
-                    }),
-                  ),
-                  SizedBox(height: 20,),
-                  Container(
-                    height: 70,
-                    width: 200,
-                    decoration: BoxDecoration(
+              ),
+              SizedBox(height: 30,),
+              Container(
+                height: leftHeight -100,
+                // color: Colors.red,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    SizedBox(height: 60,),
+                    Container(
+                      height: 70,
+                      width: 200,
+                      decoration: BoxDecoration(
                         color: Colors.purple.shade300,
                         border: Border.all(
                           color: Colors.purple,
                           width: 2,
                         ),
                         borderRadius: BorderRadius.circular(20)
+                      ),
+                      child: CupertinoButton(child: Text("Reading...",style: TextStyle(color: Colors.white,fontWeight:FontWeight.bold,fontSize: 20),), onPressed: (){
+                        Navigator.push(context, MaterialPageRoute(builder:(context) => ReadingTopicSelection(),));
+                      }),
                     ),
-                    child: CupertinoButton(child: Text("Listening...",style: TextStyle(color: Colors.white,fontWeight:FontWeight.bold,fontSize: 20),), onPressed: (){
-
-                    }),
-                  ),
-                  SizedBox(height: 20,),
-                  Container(
-                    height: 70,
-                    width: 200,
-                    decoration: BoxDecoration(
-                        color: Colors.purple.shade300,
-                        border: Border.all(
-                          color: Colors.purple,
-                          width: 2,
-                        ),
-                        borderRadius: BorderRadius.circular(20)
+                    // SizedBox(height: 20,),
+                    Container(
+                      height: 70,
+                      width: 200,
+                      decoration: BoxDecoration(
+                          color: Colors.purple.shade300,
+                          border: Border.all(
+                            color: Colors.purple,
+                            width: 2,
+                          ),
+                          borderRadius: BorderRadius.circular(20)
+                      ),
+                      child: CupertinoButton(child: Text("Listening...",style: TextStyle(color: Colors.white,fontWeight:FontWeight.bold,fontSize: 20),), onPressed: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => Topic_Selection(),));
+                      }),
                     ),
-                    child: CupertinoButton(child: Text("Speaking...",style: TextStyle(color: Colors.white,fontWeight:FontWeight.bold,fontSize: 20),), onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => Speaking(),));
-                    }),
-                  ),
-                  SizedBox(height: 20,),
-                ],
+                    // SizedBox(height: 20,),
+                    Container(
+                      height: 70,
+                      width: 200,
+                      decoration: BoxDecoration(
+                          color: Colors.purple.shade300,
+                          border: Border.all(
+                            color: Colors.purple,
+                            width: 2,
+                          ),
+                          borderRadius: BorderRadius.circular(20)
+                      ),
+                      child: CupertinoButton(child: Text("Speaking...",style: TextStyle(color: Colors.white,fontWeight:FontWeight.bold,fontSize: 20),), onPressed: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => Speaking(),));
+                      }),
+                    ),
+                    // SizedBox(height: 20,),
+                  ],
+                )
               )
-            )
-          ],
+            ],
+          ),
         ),
       ),
     );

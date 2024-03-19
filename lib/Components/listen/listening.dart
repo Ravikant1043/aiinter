@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:simple_circular_progress_bar/simple_circular_progress_bar.dart';
 import 'package:google_generative_ai/google_generative_ai.dart';
-// import 'package:flutter_tts'
 import 'package:flutter_tts/flutter_tts.dart';
 
 
@@ -130,14 +129,13 @@ class _ListeningState extends State<Listening> {
     final response = await model.generateContent(content);
     setState(() {
       generatedText = response.text.toString();
-      //speak(generatedText);
     });
   }
   //Language,pitch and speech rate
   Future<void> speak(String text) async {
     await flutterTts.setLanguage("en-US");
-    await flutterTts.setPitch(0.7);
-    await flutterTts.setSpeechRate(0.8);
+    await flutterTts.setPitch(0.4);
+    await flutterTts.setSpeechRate(0.4);
     await flutterTts.speak(text);
   }
   void micAndVoice(){

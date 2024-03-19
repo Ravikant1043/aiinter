@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   simple_circular_progress_bar:
   flutter_tts:
+  flutter_spinkit:
 
 dev_dependencies:
   flutter_test:
@@ -43,18 +44,9 @@ dev_dependencies:
   google_generative_ai:
   circular_seek_bar:
   flutter_tts:
-  flutter_spinkit:
+
   flutter_lints:
-
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
-
-# The following section is specific to Flutter packages.
 flutter:
-
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
