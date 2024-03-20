@@ -60,11 +60,11 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCQL-7Gscp85atB9aC5yf3Mpu-0RFPFv6w',
-    appId: '1:997234180551:ios:c3518e197a5e49b81e59e2',
-    messagingSenderId: '997234180551',
-    projectId: 'aiinterview-5a0ab',
-    storageBucket: 'aiinterview-5a0ab.appspot.com',
-    iosBundleId: 'com.example.aiinterview',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    storageBucket: '',
+    iosBundleId: '',
   );
 }
